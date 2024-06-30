@@ -31,7 +31,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/THE-VIP-BOY-OP/VIP-MUSIC-PLUGIN",
+    "https://github.com/crazyworld-izzy/plugin",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
@@ -41,8 +41,8 @@ EXTRA_PLUGINS_FOLDER = getenv("EXTRA_PLUGINS_FOLDER", "plugins")
 # Your folder name in your extra plugins repo where all plugins stored
 
 
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002066328009"))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002066328009"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002178149669"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002178149669"))
 
 # Get this value from  on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID","6900132473"))
