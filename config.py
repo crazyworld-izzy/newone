@@ -41,7 +41,7 @@ EXTRA_PLUGINS_FOLDER = getenv("EXTRA_PLUGINS_FOLDER", "plugins")
 # Your folder name in your extra plugins repo where all plugins stored
 
 
-LOGGER_ID = int(getenv("LOGGER_ID"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002066328009"))
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002066328009"))
 
 # Get this value from  on Telegram by /id
