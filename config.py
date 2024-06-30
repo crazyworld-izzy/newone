@@ -7,14 +7,14 @@ from pyrogram import filters
 
 load_dotenv()
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "10284859"))
+API_HASH = getenv("API_HASH", "b0ad58eb8b845ba0003e0d9ce5fc2196")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "7426421230:AAGQQ4TnGCdNbDBwWwxMbWtI0CUIeF5c8Bo")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://monivps5:monivps5@cluster0.kmbq8we.mongodb.net/?retryWrites=true&w=majority")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 16000))
 
@@ -42,10 +42,10 @@ EXTRA_PLUGINS_FOLDER = getenv("EXTRA_PLUGINS_FOLDER", "plugins")
 
 
 LOGGER_ID = int(getenv("LOGGER_ID"))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001443337704"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002066328009"))
 
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID"))
+OWNER_ID = int(getenv("OWNER_ID","6900132473"))
 
 # Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -62,11 +62,11 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/VIP_CREATORS")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/TG_FRIENDSS")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/tamil_chat_moon_shine")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/tamil_chat_moon_shine")
 
 # Maximum Limit Allowed for users to save playlists on bot's server
-SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "100"))
+SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "3000"))
 
 RADIO_URL = getenv("RADIO_URL", "http://peridot.streamguys.com:7150/Mirchi")
 
@@ -84,7 +84,7 @@ AUTO_LEAVING_ASSISTANT = False
 AUTO_GCAST = os.getenv("AUTO_GCAST")
 
 # Auto Broadcast Message That You Want Use In Auto Broadcast In All Groups.
-AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", "")
+AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", "off")
 
 # Get this credentials from https://developer.spotify.com/dashboard
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "19609edb1b9f4ed7be0c8c1342039362")
@@ -99,8 +99,8 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 2500))
 
 
 # Telegram audio and video file size limit (in bytes)
-TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
-TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
+TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 904857600))
+TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 9073741824))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
 
 # Time after which bot will suggest random chats about bot commands.
@@ -117,7 +117,7 @@ CLEANMODE_DELETE_MINS = int(
 )  # Remember to give value in Seconds
 
 # Get your pyrogram v2 session from @VIP_STRING_ROBOT on Telegram
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQCc7zsACtecMkL6QqPOHyK40UXUCQs4vD9V1wRLuBqdPX5-eFPHCHJm4ypA3l2VtpTEzI4HG7iDAs0g0-7oXzZESuXuUVlsQYSwPetJ_ZYLlXzF9knZ4vmGgzj90aSECTASbQPuCiCmaHmtlz3fOzQJVOIPCcqua0Yag3HO1saxi2u3TsIgXSoAtYY2nuYUL30XZczChAJzOpvhPiytqhAfKLmxEx0AAbkISSwpsMb3S6TiAFv6MdnHMWTWBphd79naXKba25BfS-LhesJnEzi_rbJT_TQSTdGzqRvFOBz1EmjeiwR0UyZv8o0EJMwccgulWdaryDv1yXKCMa8E8Xas92xc3QAAAAGEyHmmAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -145,15 +145,15 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/01626a4a06b561efdd8dc.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/01626a4a06b561efdd8dc.jpg"
 )
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
 STATS_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
+TELEGRAM_AUDIO_URL = "https://telegra.ph/file/01626a4a06b561efdd8dc.jpg"
+TELEGRAM_VIDEO_URL = "https://telegra.ph/file/01626a4a06b561efdd8dc.jpg"
 STREAM_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
 SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
 YOUTUBE_IMG_URL = "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg"
